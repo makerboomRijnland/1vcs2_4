@@ -1,0 +1,483 @@
+/* Reset */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* Type */
+
+body, input, select, textarea {
+    color: #646464;
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-size: 14pt;
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+@media screen and (max-width: 1680px) {
+
+    body, input, select, textarea {
+        font-size: 12pt;
+    }
+
+}
+
+@media screen and (max-width: 1280px) {
+
+    body, input, select, textarea {
+        font-size: 12pt;
+    }
+
+}
+
+@media screen and (max-width: 980px) {
+
+    body, input, select, textarea {
+        font-size: 12pt;
+    }
+
+}
+
+@media screen and (max-width: 736px) {
+
+    body, input, select, textarea {
+        font-size: 12pt;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    body, input, select, textarea {
+        font-size: 12pt;
+    }
+
+}
+
+a {
+    transition: color 0.2s ease, border-bottom-color 0.2s ease;
+    border-bottom: dotted 1px rgba(160, 160, 160, 0.65);
+    color: inherit;
+    text-decoration: underline;
+}
+
+a:before {
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    border-bottom-color: transparent;
+    color: #2ebaae !important;
+}
+
+a:hover:before {
+    color: #2ebaae !important;
+}
+
+strong, b {
+    color: #3c3b3b;
+    font-weight: 700;
+}
+
+em, i {
+    font-style: italic;
+}
+
+p {
+    margin: 0 0 2em 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #3c3b3b;
+    font-family: "Raleway", Helvetica, sans-serif;
+    font-weight: 800;
+    letter-spacing: 0.25em;
+    line-height: 1.65;
+    margin: 0 0 1em 0;
+    text-transform: uppercase;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    color: inherit;
+    border-bottom: 0;
+}
+
+h2 {
+    font-size: 1.1em;
+}
+
+h3 {
+    font-size: 0.9em;
+}
+
+h4 {
+    font-size: 0.7em;
+}
+
+h5 {
+    font-size: 0.7em;
+}
+
+h6 {
+    font-size: 0.7em;
+}
+
+sub {
+    font-size: 0.8em;
+    position: relative;
+    top: 0.5em;
+}
+
+sup {
+    font-size: 0.8em;
+    position: relative;
+    top: -0.5em;
+}
+
+blockquote {
+    border-left: solid 4px rgba(160, 160, 160, 0.3);
+    font-style: italic;
+    margin: 0 0 2em 0;
+    padding: 0.5em 0 0.5em 2em;
+}
+
+code {
+    background: rgba(160, 160, 160, 0.075);
+    border: solid 1px rgba(160, 160, 160, 0.3);
+    font-family: "Courier New", monospace;
+    font-size: 0.9em;
+    margin: 0 0.25em;
+    padding: 0.25em 0.65em;
+}
+
+pre {
+    -webkit-overflow-scrolling: touch;
+    font-family: "Courier New", monospace;
+    font-size: 0.9em;
+    margin: 0 0 2em 0;
+}
+
+pre code {
+    display: block;
+    line-height: 1.75em;
+    padding: 1em 1.5em;
+    overflow-x: auto;
+}
+
+hr {
+    border: 0;
+    border-bottom: solid 1px rgba(160, 160, 160, 0.3);
+    margin: 2em 0;
+}
+
+/* Body */
+
+@media screen and (max-width: 480px) {
+
+    html, body {
+        min-width: 320px;
+    }
+
+}
+
+body {
+    background: #f4f4f4;
+}
+
+body.is-loading *, body.is-loading *:before, body.is-loading *:after {
+    animation: none !important;
+    transition: none !important;
+}
+
+/* Header */
+
+body {
+    padding-top: 3.5em;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border-bottom: solid 1px rgba(160, 160, 160, 0.3);
+    height: 3.5em;
+    left: 0;
+    line-height: 3.5em;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+}
+
+#header #page-title {
+    height: inherit;
+    line-height: inherit;
+    padding: 0 0 0 1.5em;
+    white-space: nowrap;
+}
+
+#header #version {
+    margin-right: 1.5em;
+}
+
+/*Text*/
+
+.important {
+    color: red;
+}
+
+/*Main*/
+
+#main {
+    display: flex;
+    flex-direction: column;
+    transition: opacity 0.5s ease;
+    margin: 0 auto;
+    max-width: 100%;
+    opacity: 1;
+    padding: 4.5em;
+    width: 90em;
+}
+
+body.is-menu-visible #main {
+    opacity: 0.15;
+}
+
+@media screen and (max-width: 1680px) {
+
+    #main {
+        padding: 3em;
+    }
+
+}
+
+@media screen and (max-width: 1280px) {
+
+    #main {
+        display: block;
+    }
+
+}
+
+@media screen and (max-width: 736px) {
+
+    #main {
+        padding: 1.5em;
+    }
+
+}
+
+body.single #main {
+    display: block;
+}
+
+/* Article */
+
+article {
+    padding: 3em 3em 1em 3em;
+    background: #ffffff;
+    border: solid 1px rgba(160, 160, 160, 0.3);
+    margin: 0 0 3em 0;
+    position: relative;
+}
+
+article > header {
+    display: flex;
+    border-bottom: solid 1px rgba(160, 160, 160, 0.3);
+    left: -3em;
+    margin: -3em 0 3em 0;
+    position: relative;
+    width: calc(100% + 6em);
+}
+
+article > header > * {
+    padding: 3.75em 3em 3.3em 3em;
+}
+
+article > header > * + * {
+    border-left: solid 1px rgba(160, 160, 160, 0.3);
+}
+
+article > header > .title {
+    flex: 1;
+}
+
+article > header > .meta {
+    min-width: 17em;
+    text-align: right;
+    width: 17em;
+}
+
+article > header > .meta > img {
+    width: 100%;
+}
+
+article > header > .title h2 {
+    font-weight: 900;
+    font-size: 1.5em;
+}
+
+article > section + section {
+    border-top: solid 1px rgba(160, 160, 160, 0.3);
+    padding-top: 1em;
+}
+
+@media screen and (max-width: 980px) {
+
+    article {
+        border-left: 0;
+        border-right: 0;
+    }
+
+    article > header {
+        flex-direction: column;
+        padding: 3.75em 3em 1.25em 3em;
+        border-left: 0;
+    }
+
+    article > header > * {
+        padding: 0;
+    }
+
+    article > header > .title {
+        margin: 0 0 2em 0;
+        text-align: center;
+    }
+
+    article > header > .meta {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        border-left: 0;
+        margin: 0 0 2em 0;
+        text-align: left;
+        width: 100%;
+    }
+
+    article > header > .meta > * {
+        border-left: solid 1px rgba(160, 160, 160, 0.3);
+        margin-left: 2em;
+        padding-left: 2em;
+    }
+
+    article > header > .meta > img {
+        max-height: 10em;
+        height: 100%;
+        width: auto;
+    }
+
+    article > header > .meta > :first-child {
+        border-left: 0;
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+}
+
+@media screen and (max-width: 736px) {
+
+    article {
+        padding: 1.5em 1.5em 0.1em 1.5em;
+        margin: 0 0 2em 0;
+    }
+
+    article > header {
+        padding: 3em 1.5em 0.5em 1.5em;
+        margin: -1.5em 0 1.5em 0;
+    }
+    
+    article > header > .meta > img {
+        max-height: 5em;
+    }
+
+    article > header > .title h2 {
+        font-size: 1.1em;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    article > header > .meta {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    article > header > .meta > * {
+        border-left: 0;
+        margin: 1em 0 0 0;
+        padding-left: 0;
+    }
+
+    article > header > .meta > img {
+        display: none;
+
+    }
+    article > footer {
+        align-items: stretch;
+        flex-direction: column-reverse;
+    }
+
+}
+
+/* Lists */
+
+ul {
+    list-style: disc;
+    margin: 0 0 2em 0;
+    padding-left: 1em;
+}
+
+ul ul {
+    margin: 0;
+}
+
+ul li {
+    padding-left: 0.5em;
+}
+
+article > section > img {
+    max-width: 100%;
+}
+
+/* Badges */
+
+.badge {
+    display: inline-block;
+    border-radius: 1em;
+    background-repeat: no-repeat;
+    background-size: 1em;
+    background-position: 0.5em center;
+    padding-left: 2em;
+    padding-right: 1em;
+    font-size: 0.8em;
+    vertical-align: middle;
+    font-weight: normal;
+    color: #000000;
+}
+
+.badge.branch {
+    background-color: #2ebaae;
+    background-image: url('../icons/git-branch.png');
+}
+
+.badge.merge {
+    background-color: khaki;
+    background-image: url('../icons/git-merge.png');
+}
+
+.badge.rebase {
+    background-color: orchid;
+    background-image: url('../icons/git-rebase.png');
+}
